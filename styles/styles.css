@@ -1,0 +1,82 @@
+/* Global Styles */
+* {
+  font-family: "Poppins", sans-serif;
+  /* Set font family */
+}
+
+/* Header Styles */
+header {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  /* Set header height */
+  z-index: 1;
+  /* Ensure the navbar has a lower z-index */
+}
+
+header h4 {
+  position: absolute;
+  left: 10%;
+  /* Position h4 element from the left */
+  bottom: 1rem;
+  /* Position h4 element from the bottom */
+  font-size: 1.6rem;
+  /* Set font size */
+}
+
+/* Splash Screen */
+.intro {
+  position: fixed;
+  z-index: 100;
+  /* Ensure the splash screen is on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100vh;
+  /* Full viewport height */
+  background-color: #161616;
+  /* Dark background color */
+  transition: 1s;
+  /* Smooth transition */
+}
+
+.logo-header {
+  position: absolute;
+  top: 40%;
+  /* Position 40% from the top */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+  /* Center the element */
+  color: #ffffff;
+  /* White text color */
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  /* Inline block display */
+  bottom: -20px;
+  /* Initial position */
+  opacity: 0;
+  /* Initially hidden */
+}
+
+.logo.active {
+  bottom: 0;
+  /* Move to the bottom */
+  opacity: 1;
+  /* Make visible */
+  transition: ease-in-out 0.5s;
+  /* Smooth transition */
+}
+
+.logo.fade {
+  bottom: 150px;
+  /* Move up */
+  transition: ease-in-out 0.5s;
+  /* Smooth transition */
+}
