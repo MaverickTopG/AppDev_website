@@ -1,6 +1,5 @@
 :root {
     --pink: #ff4081;
-    /* Define pink color variable */
 }
 
 body {
@@ -9,18 +8,18 @@ body {
 }
 
 #navbar {
-    position: sticky;
-    /* Stick to top */
+    position: absolute;
+
     top: 0;
     width: 100%;
     z-index: 50;
-    /* Lower z-index to stay behind the cursor */
+
     background-color: black;
     font-weight: bold;
-    /* Bold text */
+
     color: white;
     font-family: "Poppins", sans-serif !important;
-    /* Ensure font */
+
 }
 
 #navbar::before {
@@ -32,38 +31,35 @@ body {
     height: 100%;
     background-color: black;
     z-index: -1;
-    /* Behind content */
+
 }
 
 #navbar ul {
     list-style: none;
-    /* Remove default list styling */
+   
     margin: 0;
     display: flex;
     justify-content: flex-end;
-    /* Align items to end */
+
     align-items: center;
-    /* Center vertically */
+
     padding: 1em 0;
     font-family: "Poppins", sans-serif !important;
-    /* Ensure font */
+
 }
 
 #navbar li {
     padding: 0 1em;
-    /* Horizontal padding */
+
 }
 
 #navbar li a {
     text-decoration: none;
-    /* Remove underline */
+
     color: white;
     position: relative;
-    /* For pseudo-element */
     transition: all ease-in-out 250ms;
-    /* Smooth transition */
     font-family: "Poppins", sans-serif !important;
-    /* Ensure font */
 }
 
 #navbar li a::after {
@@ -73,26 +69,19 @@ body {
     height: 0.4em;
     width: 0;
     background-color: var(--pink);
-    /* Pink underline */
     bottom: -1em;
-    /* Below text */
     transition: all ease-in-out 250ms;
-    /* Smooth transition */
 }
 
 #navbar li a:hover::after {
     width: 100%;
-    /* Expand underline on hover */
 }
 
 #navbar li a:hover {
     color: var(--pink);
-    /* Change text color on hover */
 }
 
 #navbar li:first-child {
     margin-right: auto;
-    /* Push to left */
     margin-left: 3em;
-    /* Add spacing */
 }

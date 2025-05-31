@@ -1,12 +1,10 @@
 * {
     padding: 0;
     box-sizing: border-box;
-    /* Ensure padding and border are included in element's total width and height */
 }
 
 body {
     overflow: hidden;
-    /* Hide overflow */
 }
 
 .container {
@@ -14,192 +12,127 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Center the container */
     width: 100vw;
-    /* Full viewport width */
     height: 100vh;
-    /* Full viewport height */
     background: #f5f5f5;
-    /* Light background color */
     background-size: cover;
     background-position: center;
 }
 
 .container .slide .item {
     width: 15vw;
-    /* Set width */
     height: 34.65vh;
-    /* Set height */
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    /* Vertically center */
     border-radius: 2vw;
-    /* Rounded corners */
     box-shadow: 0 3vh 5vh #505050;
-    /* Shadow effect */
     background-position: 50% 50%;
     background-size: cover;
     display: inline-block;
     transition: 0.5s;
-    /* Smooth transition */
 }
 
-/* Fullscreen for first two items */
 .slide .item:nth-child(1),
 .slide .item:nth-child(2) {
     top: 0;
     left: 0;
     transform: translate(0, 0);
-    /* No translation */
     border-radius: 0;
-    /* No border radius */
     width: 100%;
     height: 100%;
 }
 
-/* Position adjustments for subsequent items */
 .slide .item:nth-child(3) {
     left: calc(30vw + 15vw);
-    /* Adjust for alignment */
 }
 
 .slide .item:nth-child(4) {
     left: calc(30vw + 30vw);
-    /* Adjust for alignment */
 }
 
 .slide .item:nth-child(5) {
     left: calc(30vw + 45vw);
-    /* Adjust for alignment */
 }
 
-/* Items beyond the fifth are hidden */
 .slide .item:nth-child(n + 6) {
     left: calc(30vw + 60vw);
-    /* Adjust for alignment */
     opacity: 0;
-    /* Hide items */
 }
 
-/* Content within items */
 .item .content {
     position: absolute;
     top: 50%;
     left: 5vw;
-    /* Left padding */
     width: 30vw;
-    /* Content width */
     text-align: left;
-    /* Left-aligned text */
-    color: #eee;
-    /* Light text color */
+    color: black;
     transform: translate(0, -50%);
-    /* Vertically center */
     font-family: system-ui;
     display: none;
-    /* Hidden by default */
 }
 
-/* Display content for the second item */
 .slide .item:nth-child(2) .content {
     display: block;
 }
 
-/* Content text styling and animations */
 .content .name {
     font-size: 3.2vw;
-    /* Font size */
     text-transform: uppercase;
-    /* Uppercase text */
     font-weight: bold;
-    /* Bold text */
     opacity: 0;
-    /* Hidden initially */
     animation: animate 1s ease-in-out 1 forwards;
-    /* Animation */
 }
 
 .content .des {
     margin-top: 1vh;
     margin-bottom: 2vh;
     opacity: 0;
-    /* Hidden initially */
     animation: animate 1s ease-in-out 0.3s 1 forwards;
-    /* Animation with delay */
     font-size: 1.2vw;
-    /* Font size */
 }
 
 .content button {
     padding: 1vh 2vw;
-    /* Button padding */
     border: none;
-    /* No border */
     cursor: pointer;
-    /* Pointer cursor */
     opacity: 0;
-    /* Hidden initially */
     animation: animate 1s ease-in-out 0.6s 1 forwards;
-    /* Animation with delay */
     font-size: 1.2vw;
-    /* Font size */
 }
 
 @keyframes animate {
     from {
         opacity: 0;
-        /* Start hidden */
         transform: translate(0, 10vh);
-        /* Start position */
         filter: blur(3.3vh);
-        /* Blurred */
     }
-
     to {
         opacity: 1;
-        /* End visible */
         transform: translate(0);
-        /* End position */
         filter: blur(0);
-        /* Clear */
     }
 }
 
-/* Navigation buttons */
 .button {
     width: 100%;
-    /* Full width */
     text-align: center;
-    /* Centered text */
     position: absolute;
     bottom: 2vh;
-    /* Positioned at the bottom */
 }
 
 .button button {
     width: 3vw;
-    /* Button width */
     height: 3vw;
-    /* Button height */
     border-radius: 0.8vw;
-    /* Rounded corners */
     border: none;
-    /* No border */
     cursor: pointer;
-    /* Pointer cursor */
     margin: 0 0.5vw;
-    /* Margin between buttons */
     border: 0.1vw solid #000;
-    /* Border color */
     transition: 0.3s;
-    /* Smooth transition */
 }
 
-/* Hover effect for buttons */
 .button button:hover {
     background: #ababab;
-    /* Background color on hover */
     color: #fff;
-    /* Text color on hover */
 }
