@@ -95,7 +95,7 @@ body {
   padding: 30px;
   text-align: center;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(130, 240, 144, 0.582);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -258,7 +258,7 @@ footer a:hover {
 
 .feature-item:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgb(88, 209, 124);
 }
 
 .feature-item i {
