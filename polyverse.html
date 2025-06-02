@@ -1,42 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Polyverse</title>
-  <link rel="stylesheet" href="/styles/polyverse_styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles/polyverse_styles.css" />
+  <link rel="stylesheet" href="/styles/topbar.css" />
   <script src="scripts/main.js"></script>
-  <link rel="stylesheet" href="/styles/polyverse_styles.css">
-
-
-  
 </head>
 <body>
-  <!-- index.html -->
-  <header>
-    <nav-bar></nav-bar>
-    <h1>Welcome to Polyverse</h1>
-    <nav>
-      <a href="/polyverse.html">Home</a> |
-      <a href="/polyverse_privacy.html">Privacy Policy</a>
-    </nav>
+  <nav-bar></nav-bar>
+
+  <header class="main-header">
+    <div class="container">
+      <!-- Empty container for spacing -->
+    </div>
   </header>
+
   <main>
-    <section>
-      <h2>About Polyverse</h2>
-      <p>Polyverse is an innovative platform exploring multiple dimensions of digital interactions. Discover new worlds of secure and private online experiences.</p>
+    <section class="hero">
+      <div class="container">
+        <h2>Polyverse</h2>
+        <p>
+          Discover Polyverse, the API-powered translation app by AppDev Club. Translate text across 10+ languages in real time.
+        </p>
+        <a href="/polyverse_privacy.html" class="nav-button">View Privacy Policy</a>
+      </div>
     </section>
-    <section>
-      <h2>Features</h2>
-      <ul>
-        <li>Secure communication</li>
-        <li>Privacy-first design</li>
-        <li>Interdimensional networking</li>
-      </ul>
+
+    <section class="features">
+      <div class="container">
+        <h3>Key Features</h3>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <i class="fas fa-language"></i>
+            <h4>Real-Time Text</h4>
+            <p>Translate chat messages, documents, and web pages instantly.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-microphone"></i>
+            <h4>Voice-to-Voice</h4>
+            <p>Speak naturally and hear immediate translations in any language. (To be implemented)</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-camera"></i>
+            <h4>Image Translation</h4>
+            <p>Point your camera at signs or menus and see translated text live. (To be implemented)</p>
+          </div>
+       
+          <div class="feature-item">
+            <i class="fas fa-shield-alt"></i>
+            <h4>Privacy-First</h4>
+            <p>All processing happens locally on your device; your data never leaves your phone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <h3>About Polyverse</h3>
+        <p>
+          Built by AppDev Club, Polyverse breaks down language barriers and fosters global connection. Whether you’re traveling, studying, or collaborating internationally, Polyverse makes communication effortless.
+        </p>
+      </div>
     </section>
   </main>
+
   <footer>
-    <p>&copy; 2025 Polyverse, AppDev Club</p>
+    <div class="container">
+      <p>&copy; 2025 Polyverse &mdash; AppDev Club</p>
+      <p>Developed by members of AppDev Club.</p>
+    </div>
   </footer>
 </body>
 </html>

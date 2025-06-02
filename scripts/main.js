@@ -9,8 +9,10 @@ class NavBar extends HTMLElement {
         this.innerHTML = `
         <ul>
             <li><a href="/index.html">AppDev Club</a></li>
+            <li><a href="/about.html">About Us</a></li>
             <li><a href="/ouroloop.html">Ouroloop</a></li>
             <li><a href="/polyverse.html">Polyverse</a></li>
+       
         </ul>`;
     }
 }
