@@ -10,7 +10,7 @@ let logo = document.querySelector('.logo-header');
 let logoSpan = document.querySelectorAll('.logo');
 
 // Check if the user did not come from your site (e.g., localhost or live domain)
-if (!prevWebsite.includes("http://127.0.0.1:3000/")) { // normal domain is https://mavericktopg.github.io/AppDev_website
+if (!prevWebsite.includes("http://127.0.0.1:3000/")) { // https://mavericktopg.github.io/AppDev_website
     // Add an event listener to the window that triggers when the DOM content is fully loaded
     window.addEventListener('DOMContentLoaded', () => {
         // Delay the execution of the code inside setTimeout by a small interval
@@ -44,8 +44,8 @@ if (!prevWebsite.includes("http://127.0.0.1:3000/")) { // normal domain is https
         });
     });
 } else {
-    // Skip the animation completely if coming from the same website
+    // If the user is coming from your site, immediately hide the intro section
     window.addEventListener('DOMContentLoaded', () => {
-        intro.style.top = '-100vh';  // Immediately move the intro out of view without any animation
+        intro.style.display = 'none'; // Hide the intro section entirely
     });
 }
