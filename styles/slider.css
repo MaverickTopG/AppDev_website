@@ -116,9 +116,9 @@ body {
 
 .button {
     width: 100%;
-    text-align: center;
     position: absolute;
-    bottom: 2vh;
+    padding-left: 56vw;
+    bottom: 22vh;
 }
 
 .button button {
@@ -128,11 +128,9 @@ body {
     border: none;
     cursor: pointer;
     margin: 0 0.5vw;
-    border: 0.1vw solid #000;
     transition: 0.3s;
 }
 
 .button button:hover {
     background: #ff4081;
-    color: #fff;
 }
