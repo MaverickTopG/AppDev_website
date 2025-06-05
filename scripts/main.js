@@ -8,11 +8,10 @@ class NavBar extends HTMLElement {
         // Set the inner HTML of this element to contain a navigation bar
         this.innerHTML = `
         <ul>
-            <li><a href="/Index.html">AppDev Club</a></li>
-            <li><a href="/about.html">About Us</a></li>
-            <li><a href="/ouroloop.html">Ouroloop</a></li>
-            <li><a href="/polyverse.html">Polyverse</a></li>
-       
+            <li><a href="./index.html">AppDev Club</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./ouroloop.html">Ouroloop</a></li>
+            <li><a href="./polyverse.html">Polyverse</a></li>
         </ul>`;
     }
 }

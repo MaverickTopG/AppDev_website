@@ -9,7 +9,6 @@ let logo = document.querySelector('.logo-header');
 // Select all elements with the class 'logo'
 let logoSpan = document.querySelectorAll('.logo');
 
-// Check if the user did not come from your site (e.g., localhost or live domain)
 if (!prevWebsite.includes("http://127.0.0.1:3000/")) { // https://mavericktopg.github.io/AppDev_website
     // Add an event listener to the window that triggers when the DOM content is fully loaded
     window.addEventListener('DOMContentLoaded', () => {
@@ -37,15 +36,12 @@ if (!prevWebsite.includes("http://127.0.0.1:3000/")) { // https://mavericktopg.g
 
             // Delay the next set of actions to allow the 'fade' class animation to complete
             setTimeout(() => {
-                // Move the intro section out of view by setting its top position to -100vh
-                // This creates a sliding-up effect to transition away the intro screen
                 intro.style.top = '-100vh';
-            }, 2300); // Start this process 300ms after the 'fade' animation begins
+            }, 2300);
         });
     });
 } else {
-    // If the user is coming from your site, immediately hide the intro section
     window.addEventListener('DOMContentLoaded', () => {
-        intro.style.display = 'none'; // Hide the intro section entirely
+        intro.style.display = 'none';
     });
 }
