@@ -9,7 +9,7 @@ let logo = document.querySelector('.logo-header');
 // Select all elements with the class 'logo'
 let logoSpan = document.querySelectorAll('.logo');
 
-if (!prevWebsite.includes("http://127.0.0.1:3000/")) { // https://mavericktopg.github.io/AppDev_website
+if (!prevWebsite.includes("https://mavericktopg.github.io/AppDev_website")) {
     // Add an event listener to the window that triggers when the DOM content is fully loaded
     window.addEventListener('DOMContentLoaded', () => {
         // Delay the execution of the code inside setTimeout by a small interval
