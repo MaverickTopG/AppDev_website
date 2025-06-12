@@ -95,7 +95,6 @@ body {
 .content button {
     padding: 1vh 2vw;
     border: none;
-    cursor: pointer;
     opacity: 0;
     animation: animate 1s ease-in-out 0.6s 1 forwards;
     font-size: 1.2vw;
